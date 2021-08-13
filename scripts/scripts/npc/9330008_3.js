@@ -1,0 +1,1 @@
+﻿cm.setBossLog("mrkl");

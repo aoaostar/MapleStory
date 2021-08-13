@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="CameraMove.img"><imgdir name="shotgun"><vector name="accelation" x="10" y="10"/><vector name="a_adjust_rate" x="0" y="0"/><vector name="velocity_first" x="10" y="10"/><vector name="v_adjust_rate" x="-100" y="-100"/><int name="delay" value="200"/><int name="postdelay" value="0"/></imgdir></imgdir>
