@@ -57,7 +57,7 @@ public class Start
         System.setProperty("server_property_fish_path", homePath + "fish.properties");
         System.setProperty("wzPath", wzPath);
         System.setProperty("scripts_path", scriptsPath);
-        System.setProperty("server_name", "寻梦");
+        System.setProperty("server_name", "冒险岛");
         OtherSettings.getInstance();
         Start.instance.run();
     }
@@ -82,7 +82,7 @@ public class Start
         catch (SQLException ex) {
             throw new RuntimeException("[数据库异常] 请检查数据库链接。目前无法连接到MySQL数据库.");
         }
-        System.out.println("服务端 开始启动...版本号：079H3 2020-10-13");
+        System.out.println("服务端 开始启动...版本号：079");
         System.out.println("当前操作系统: " + System.getProperty("sun.desktop"));
         System.out.println("服务器地址: " + ServerProperties.getProperty("RoyMS.IP") + ":" + LoginServer.PORT);
         System.out.println("游戏版本: " + ServerConstants.MAPLE_TYPE + " v." + ServerConstants.MAPLE_VERSION + "." + ServerConstants.MAPLE_PATCH);
@@ -326,7 +326,6 @@ public class Start
         System.out.println("当前操作系统: " + System.getProperty("sun.desktop"));
         System.out.println("服务器地址: " + ServerProperties.getProperty("RoyMS.IP") + ":" + LoginServer.PORT);
         System.out.println("游戏版本: " + ServerConstants.MAPLE_TYPE + " v." + ServerConstants.MAPLE_VERSION + "." + ServerConstants.MAPLE_PATCH);
-        System.out.println("作者Roy: 游戏仅供学习和娱乐，禁止用于商业用途");
         World.init();
         runThread();
         loadData();
@@ -388,7 +387,7 @@ public class Start
                 }
                 System.out.println(conStr.toString());
                 if (Start.maxUsers > 0) {
-                    FileoutputUtil.log("log/在线统计.log", conStr.toString());
+                    FileoutputUtil.log("logs/在线统计.log", conStr.toString());
                 }
             }
         }, 60000 * time);

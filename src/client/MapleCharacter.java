@@ -906,7 +906,7 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject implements Se
         catch (SQLException ess) {
             ess.printStackTrace();
             System.out.println("加载角色数据信息出错...");
-            FileoutputUtil.outputFileError("log/Packet_Except.log", ess);
+            FileoutputUtil.outputFileError("logs/Packet_Except.log", ess);
         }
         finally {
             try {
@@ -1041,14 +1041,14 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject implements Se
         catch (DatabaseException ex2) {}
         catch (SQLException e) {
             e.printStackTrace();
-            FileoutputUtil.outputFileError("log/Packet_Except.log", e);
+            FileoutputUtil.outputFileError("logs/Packet_Except.log", e);
             System.err.println("[charsave] Error saving character data");
             try {
                 con.rollback();
             }
             catch (SQLException ex) {
                 e.printStackTrace();
-                FileoutputUtil.outputFileError("log/Packet_Except.log", ex);
+                FileoutputUtil.outputFileError("logs/Packet_Except.log", ex);
                 System.err.println("[charsave] Error Rolling Back");
             }
             try {
@@ -1066,7 +1066,7 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject implements Se
             }
             catch (SQLException e2) {
                 e2.printStackTrace();
-                FileoutputUtil.outputFileError("log/Packet_Except.log", e2);
+                FileoutputUtil.outputFileError("logs/Packet_Except.log", e2);
                 System.err.println("[charsave] Error going back to autocommit mode");
             }
         }
@@ -1086,7 +1086,7 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject implements Se
             }
             catch (SQLException e3) {
                 e3.printStackTrace();
-                FileoutputUtil.outputFileError("log/Packet_Except.log", e3);
+                FileoutputUtil.outputFileError("logs/Packet_Except.log", e3);
                 System.err.println("[charsave] Error going back to autocommit mode");
             }
         }

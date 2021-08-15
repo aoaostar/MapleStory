@@ -2736,8 +2736,8 @@ public class GameConstants
     public static List<Balloon> getBalloons() {
         if (GameConstants.lBalloon.isEmpty()) {
             GameConstants.lBalloon.add(new Balloon("["+System.getProperty("server_name")+"冒险岛]", 250, 286));
-            GameConstants.lBalloon.add(new Balloon(System.getProperty("server_name")+"冒险岛==Roy出品", 0, 276));
-            GameConstants.lBalloon.add(new Balloon("冒险岛"+System.getProperty("server_name")+"群首发 917544648", 490, 270));
+            GameConstants.lBalloon.add(new Balloon(System.getProperty("server_name")+"冒险岛  尽情浪吧", 0, 276));
+            GameConstants.lBalloon.add(new Balloon("冒险岛"+System.getProperty("server_name")+"BY LOC 鞠婧祎", 490, 270));
         }
         return GameConstants.lBalloon;
     }

@@ -174,7 +174,7 @@ public class FileoutputUtil
     }
     
     public static void hiredMerchLog(final String file, final String msg) {
-        final String newfile = "log/雇佣商人/" + file + ".txt";
+        final String newfile = "logs/雇佣商人/" + file + ".txt";
         FileOutputStream out = null;
         try {
             out = new FileOutputStream(newfile, true);
@@ -195,20 +195,20 @@ public class FileoutputUtil
     
     static {
         sdfT = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒");
-        FileoutputUtil.fixdam_mg = "Logs/魔法伤害修正.rtf";
-        FileoutputUtil.fixdam_ph = "Logs/物理伤害修正.rtf";
-        FileoutputUtil.MobVac_log = "Logs/Log_吸怪.txt";
-        FileoutputUtil.hack_log = "Logs/Log_怀疑外挂.rtf";
-        FileoutputUtil.ban_log = "Logs/Log_封号.rtf";
-        FileoutputUtil.Acc_Stuck = "Logs/Log_卡账号.rtf";
-        FileoutputUtil.Login_Error = "Logs/Log_登录错误.rtf";
-        FileoutputUtil.Movement_Log = "Logs/移动出错.log";
-        FileoutputUtil.IP_Log = "Logs/Log_账号IP.rtf";
-        FileoutputUtil.Zakum_Log = "Logs/Log_扎昆.rtf";
-        FileoutputUtil.Horntail_Log = "Logs/Log_暗黑龙王.rtf";
-        FileoutputUtil.Pinkbean_Log = "Logs/Log_品克缤.rtf";
-        FileoutputUtil.ScriptEx_Log = "Logs/Log_Script_脚本异常.rtf";
-        FileoutputUtil.PacketEx_Log = "Logs/Log_Packet_封包异常.rtf";
+        FileoutputUtil.fixdam_mg = "logs/魔法伤害修正.rtf";
+        FileoutputUtil.fixdam_ph = "logs/物理伤害修正.rtf";
+        FileoutputUtil.MobVac_log = "logs/Log_吸怪.txt";
+        FileoutputUtil.hack_log = "logs/Log_怀疑外挂.rtf";
+        FileoutputUtil.ban_log = "logs/Log_封号.rtf";
+        FileoutputUtil.Acc_Stuck = "logs/Log_卡账号.rtf";
+        FileoutputUtil.Login_Error = "logs/Log_登录错误.rtf";
+        FileoutputUtil.Movement_Log = "logs/移动出错.log";
+        FileoutputUtil.IP_Log = "logs/Log_账号IP.rtf";
+        FileoutputUtil.Zakum_Log = "logs/Log_扎昆.rtf";
+        FileoutputUtil.Horntail_Log = "logs/Log_暗黑龙王.rtf";
+        FileoutputUtil.Pinkbean_Log = "logs/Log_品克缤.rtf";
+        FileoutputUtil.ScriptEx_Log = "logs/Log_Script_脚本异常.rtf";
+        FileoutputUtil.PacketEx_Log = "logs/Log_Packet_封包异常.rtf";
         sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         sdf_ = new SimpleDateFormat("yyyy-MM-dd");
     }

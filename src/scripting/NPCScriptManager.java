@@ -56,16 +56,16 @@ public class NPCScriptManager extends AbstractScriptManager {
                     if (wh == 0) {
                         switch (GameConstants.game) {
                             case 0: {
-                                cm.sendOk("欢迎来到#b寻梦冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
+                                cm.sendOk("欢迎来到#b冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
                                 break;
                             }
                             default: {
-                                cm.sendOk("欢迎来到#b寻梦冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
+                                cm.sendOk("欢迎来到#b冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
                                 break;
                             }
                         }
                     } else {
-                        cm.sendOk("欢迎来到#b寻梦冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
+                        cm.sendOk("欢迎来到#b冒险岛#k。你找我有什么事吗？\r\n我的ID是: #r" + npc + "#k.\r\n 有问题联系#bGM#k");
                     }
                     cm.dispose();
                     return;

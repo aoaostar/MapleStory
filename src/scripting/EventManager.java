@@ -345,7 +345,7 @@ public class EventManager
         }
         catch (Exception ex) {
             System.out.println("Event name : " + this.name + ", method Name : setup-squad:\n" + ex);
-            FileoutputUtil.log("log/Script_Except.log", "Event name : " + this.name + ", method Name : setup-squad:\n" + ex);
+            FileoutputUtil.log("logs/Script_Except.log", "Event name : " + this.name + ", method Name : setup-squad:\n" + ex);
         }
     }
     

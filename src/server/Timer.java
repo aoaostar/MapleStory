@@ -17,7 +17,7 @@ public abstract class Timer
         if (this.ses != null && !this.ses.isShutdown() && !this.ses.isTerminated()) {
             return;
         }
-        this.file = "Logs/Log_" + this.name + "_Except.rtf";
+        this.file = "logs/Log_" + this.name + "_Except.rtf";
         final String tname = this.name + Randomizer.nextInt();
         final ThreadFactory thread = new ThreadFactory() {
             private final AtomicInteger threadNumber = new AtomicInteger(1);

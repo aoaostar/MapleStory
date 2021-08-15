@@ -75,12 +75,12 @@ public class MaplePacketDecoder extends CumulativeProtocolDecoder
                 if (packetLen <= 3000) {
                     final String SendTo = Send + HexTool.toString(decryptedPacket) + "\r\n" + HexTool.toStringFromAscii(decryptedPacket);
                     if (show) {
-                        FileoutputUtil.packetLog("log/客户端封包.log", SendTo);
+                        FileoutputUtil.packetLog("logs/客户端封包.log", SendTo);
                         System.out.println(SendTo);
                     }
                     final String SendTos = "\r\n时间：" + FileoutputUtil.CurrentReadable_Time() + "  ";
                     if (op.equals("UNKNOWN")) {
-                        FileoutputUtil.packetLog("log/未知客服端封包.log", SendTos + SendTo);
+                        FileoutputUtil.packetLog("logs/未知客服端封包.log", SendTos + SendTo);
                     }
                 }
                 else {

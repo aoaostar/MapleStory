@@ -148,7 +148,7 @@ public class CheatTracker
                 this.monsterMoveCount = 0;
                 World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[管理员信息] 开挂玩家[" + MapleCharacterUtil.makeMapleReadable(chr.getName()) + "] 地图ID[" + chr.getMapId() + "] 怀疑使用吸怪! ").getBytes());
                 final String note = "时间：" + FileoutputUtil.CurrentReadable_Time() + " || 玩家名字：" + chr.getName() + "|| 玩家地图：" + chr.getMapId() + "\r\n";
-                FileoutputUtil.packetLog("log/吸怪检测/" + chr.getName() + ".log", note);
+                FileoutputUtil.packetLog("logs/吸怪检测/" + chr.getName() + ".log", note);
             }
         }
         else {

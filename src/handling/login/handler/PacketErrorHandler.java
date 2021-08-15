@@ -22,7 +22,7 @@ public class PacketErrorHandler
                 from = "\r\n时间：" + FileoutputUtil.CurrentReadable_Time() + "  角色: " + c.getPlayer().getName() + "  等级(" + c.getPlayer().getLevel() + ") 职业: " + c.getPlayer().getJob() + " \r\n";
             }
             final String Recv = "封包出错: \r\n" + op + " [" + pHeaderStr + "] (" + (badPacketSize - 6) + ")\r\n" + slea.toString(true);
-            FileoutputUtil.packetLog("log/封包出错.log", from + Recv);
+            FileoutputUtil.packetLog("logs/封包出错.log", from + Recv);
         }
     }
     

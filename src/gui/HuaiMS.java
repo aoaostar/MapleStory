@@ -516,7 +516,7 @@ public class HuaiMS extends JFrame
         this.jLabel3.setText("   本程序来自互联网 仅供学习测试 禁止商业用途 否则本人不承担任何后果");
         this.jTabbedPane1.addTab("公告申明", this.jLabel3);
         this.jLabel4.setFont(new Font("宋体", 1, 12));
-        this.jLabel4.setText("       版本号：V079_MAX正式版  作者  购买请联系QQ： ");
+        this.jLabel4.setText("       版本号：V079_MAX正式版");
         this.jTabbedPane1.addTab("版权说明", this.jLabel4);
         this.jLabel5.setFont(new Font("宋体", 1, 12));
         this.jLabel5.setText("      修复大量BUG 修复全任务 全副本 全BOSS 全剧情完美 全职业完美 ");

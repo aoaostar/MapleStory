@@ -104,7 +104,7 @@ public class HiredMerchantHandler
                             return;
                         }
                         if (deletePackage(c.getPlayer().getId(), c.getPlayer().getAccountID(), pack.getPackageid())) {
-                            FileoutputUtil.logToFile_chr(c.getPlayer(), "Logs/Log_雇佣金币领取记录.txt", " 领回金币 " + pack.getMesos());
+                            FileoutputUtil.logToFile_chr(c.getPlayer(), "logs/Log_雇佣金币领取记录.txt", " 领回金币 " + pack.getMesos());
                             c.getPlayer().gainMeso(pack.getMesos(), false);
                             c.getPlayer().setConversation(0);
                             c.getPlayer().dropMessage("领取金币" + pack.getMesos());

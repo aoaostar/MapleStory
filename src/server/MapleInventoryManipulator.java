@@ -1152,7 +1152,7 @@ public class MapleInventoryManipulator
                     c.getPlayer().forceUpdateItem(item);
                     c.getPlayer().dropMessage(5, "在背包中发现复制装备[" + ii.getName(item.getItemId()) + "]已经将其锁定。");
                     final String msgtext = "玩家 " + c.getPlayer().getName() + " ID: " + c.getPlayer().getId() + " (等级 " + c.getPlayer().getLevel() + ") 地图: " + c.getPlayer().getMapId() + " 在玩家背包中发现复制装备[" + ii.getName(item.getItemId()) + "]已经将其锁定。";
-                    FileoutputUtil.log("log/复制装备.txt", msgtext + " 道具唯一ID: " + item.getEquipOnlyId());
+                    FileoutputUtil.log("logs/复制装备.txt", msgtext + " 道具唯一ID: " + item.getEquipOnlyId());
                     locked = true;
                 }
                 else {
@@ -1174,7 +1174,7 @@ public class MapleInventoryManipulator
                     c.getPlayer().forceUpdateItem(item2);
                     c.getPlayer().dropMessage(5, "在穿戴中发现复制装备[" + ii.getName(item2.getItemId()) + "]已经将其锁定。");
                     final String msgtext2 = "玩家 " + c.getPlayer().getName() + " ID: " + c.getPlayer().getId() + " (等级 " + c.getPlayer().getLevel() + ") 地图: " + c.getPlayer().getMapId() + " 在玩家穿戴中发现复制装备[" + ii.getName(item2.getItemId()) + "]已经将其锁定。";
-                    FileoutputUtil.log("log/复制装备.txt", msgtext2 + " 道具唯一ID: " + item2.getEquipOnlyId());
+                    FileoutputUtil.log("logs/复制装备.txt", msgtext2 + " 道具唯一ID: " + item2.getEquipOnlyId());
                     locked = true;
                 }
                 else {
@@ -1197,7 +1197,7 @@ public class MapleInventoryManipulator
                     c.getPlayer().forceUpdateItem(item3);
                     c.getPlayer().dropMessage(5, "在消耗中发现复制道具[" + ii.getName(item3.getItemId()) + "]已经将其锁定。");
                     final String msgtext3 = "玩家 " + c.getPlayer().getName() + " ID: " + c.getPlayer().getId() + " (等级 " + c.getPlayer().getLevel() + ") 地图: " + c.getPlayer().getMapId() + " 在玩家消耗中发现复制道具[" + ii.getName(item3.getItemId()) + "]已经将其锁定。";
-                    FileoutputUtil.log("Logs/复制装备.txt", msgtext3 + " 道具唯一ID: " + item3.getEquipOnlyId());
+                    FileoutputUtil.log("logs/复制装备.txt", msgtext3 + " 道具唯一ID: " + item3.getEquipOnlyId());
                     locked = true;
                 }
                 else {
@@ -1220,7 +1220,7 @@ public class MapleInventoryManipulator
                     c.getPlayer().forceUpdateItem(item4);
                     c.getPlayer().dropMessage(5, "在其他中发现复制道具[" + ii.getName(item4.getItemId()) + "]已经将其锁定。");
                     final String msgtext4 = "玩家 " + c.getPlayer().getName() + " ID: " + c.getPlayer().getId() + " (等级 " + c.getPlayer().getLevel() + ") 地图: " + c.getPlayer().getMapId() + " 在玩家其他中发现复制道具[" + ii.getName(item4.getItemId()) + "]已经将其锁定。";
-                    FileoutputUtil.log("Logs/复制装备.txt", msgtext4 + " 道具唯一ID: " + item4.getEquipOnlyId());
+                    FileoutputUtil.log("logs/复制装备.txt", msgtext4 + " 道具唯一ID: " + item4.getEquipOnlyId());
                     locked = true;
                 }
                 else {
@@ -1243,7 +1243,7 @@ public class MapleInventoryManipulator
                     c.getPlayer().forceUpdateItem(item5);
                     c.getPlayer().dropMessage(5, "在现金道具中发现复制道具[" + ii.getName(item5.getItemId()) + "]已经将其锁定。");
                     final String msgtext5 = "玩家 " + c.getPlayer().getName() + " ID: " + c.getPlayer().getId() + " (等级 " + c.getPlayer().getLevel() + ") 地图: " + c.getPlayer().getMapId() + " 在玩家现金道具中发现复制道具[" + ii.getName(item5.getItemId()) + "]已经将其锁定。";
-                    FileoutputUtil.log("Logs/复制装备.txt", msgtext5 + " 道具唯一ID: " + item5.getEquipOnlyId());
+                    FileoutputUtil.log("logs/复制装备.txt", msgtext5 + " 道具唯一ID: " + item5.getEquipOnlyId());
                     locked = true;
                 }
                 else {

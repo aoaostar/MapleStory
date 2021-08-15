@@ -1002,14 +1002,14 @@ public class MapleServerHandler extends IoHandlerAdapter implements MapleServerH
     static {
         MapleServerHandler.Log_Packets = true;
         MapleServerHandler.nl = System.getProperty("line.separator");
-        MapleServerHandler.loggedIPs = new File("Logs/LogIPs.txt");
+        MapleServerHandler.loggedIPs = new File("logs/LogIPs.txt");
         MapleServerHandler.logIPMap = new HashMap<String, FileWriter>();
         MapleServerHandler.debugMode = Boolean.parseBoolean(ServerProperties.getProperty("RoyMS.Debug", "false"));
         MapleServerHandler.blocked = EnumSet.noneOf(RecvPacketOpcode.class);
         MapleServerHandler.Log_Size = 10000;
         MapleServerHandler.Packet_Log = new ArrayList<LoggedPacket>(MapleServerHandler.Log_Size);
         MapleServerHandler.Packet_Log_Lock = new ReentrantReadWriteLock();
-        MapleServerHandler.Packet_Log_Output = new File("PacketLog.txt");
+        MapleServerHandler.Packet_Log_Output = new File("logs/PacketLog.txt");
         reloadLoggedIPs();
         final RecvPacketOpcode[] block = { RecvPacketOpcode.NPC_ACTION, RecvPacketOpcode.MOVE_PLAYER, RecvPacketOpcode.MOVE_PET, RecvPacketOpcode.MOVE_SUMMON, RecvPacketOpcode.MOVE_LIFE, RecvPacketOpcode.HEAL_OVER_TIME, RecvPacketOpcode.STRANGE_DATA };
         MapleServerHandler.blocked.addAll(Arrays.asList(block));
